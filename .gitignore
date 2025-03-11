@@ -1,0 +1,110 @@
+# Gitignore Template for a Comprehensive Project
+
+# =============================================================
+# Core Files/Folders - Essentials
+# =============================================================
+# OS generated files
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node.js and Next.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug/
+.next/
+out/
+build/  # Important to ignore the build folder
+exported/
+next-env.d.ts
+
+# Environment files (CRUCIAL - DO NOT COMMIT THESE)
+.env*
+!.env.example # Important - include this to track example env file
+# Local development environment overrides
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+
+# =============================================================
+# Editor/IDE Specific - Customizations
+# =============================================================
+# JetBrains IDEs
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Other Editors
+*.swp  # Vim swap files
+*.swo  # Vim swap files
+*.tmp  # Temporary files
+
+# =============================================================
+# Dependency Managers - Update if needed
+# =============================================
+# Bower
+bower_components/
+
+# =============================================================
+# Logs and Temp Files - Keep the repo clean
+# =============================================================
+*.log
+*.tmp
+temp/
+tmp/
+
+# =============================================================
+# Compiled Code - For various languages
+# =============================================================
+*.class   # Java
+*.pyc     # Python
+*.com     # Executables
+*.exe     # Executables
+*.dll     # Dynamic Libraries
+*.o       # Object files
+*.so      # Shared Objects
+
+# =============================================================
+# Package Archives - Exclude large archives
+# =============================================================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# =============================================================
+# Security - Additional protection
+# =============================================================
+# Certificate files - Avoid committing sensitive certs
+*.pem
+*.key
+
+# Database files (if applicable & not using managed service)
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================
+# Personal Files - Customize for your needs
+# =============================================================
+*.suo # Visual Studio solution user options
+
+# Ignore the .log directory (adjust based on your logging framework)
+logs/
+
+# MacOS-specific files
+._*
